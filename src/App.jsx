@@ -1,25 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import AppRoutes from './Routes'
+import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>React JS</h1>
-      <h3>Hooks</h3>
-      <ul>
-        <li>useState</li>
-        <li>useEffect</li>
-        <li>useContext</li>
-        <li>useReducer</li>
-        <li>useCallback</li>
-        <li>useMemo</li>
-        <li>useRef</li>
-      </ul>
-    </>
+    <Router>
+      <Route exact path="/" render={() => <HomePage />} />
+      <Route exact path="/about" render={() => <AboutPage />} />
+  </Router>
   )
 }
 
