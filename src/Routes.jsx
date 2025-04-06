@@ -1,18 +1,19 @@
 import React from 'react'
 import { BrowserRouter, Routes,Router, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
-import useState from './pages/Hooks/UseState/UseState'
+import Usestate from './pages/Hooks/Usestate/UseState'
 
 const AppRoutes = () => {
   return (
-    <div className="App">
+      <BrowserRouter>
+      <main className='main-container'>
       <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="about" element={ <About/> } />
-        <Route path="contact" element={ <Contact/> } />
+        <Route path="/usestate" element={ <Usestate/> } />
       </Routes>
-    </div>
-  )
+      </main>
+      </BrowserRouter>
+      )
 }
 
 export default AppRoutes
