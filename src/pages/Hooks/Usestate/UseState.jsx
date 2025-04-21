@@ -6,11 +6,12 @@ const Usestate = () => {
     <div className='page-container'>
     <h1 className='title'>Hooks</h1>
     <h4 className='sub-title'>UseState</h4>
-    <div className='box-container'>
+    <div className='box-wrapper'>
+    <h4 className='sub-title'>Simple Counter</h4>
       <div className="row-section">
-        <button className='primary-btn' onClick={()=>{setCount(count + 1)}}>+</button>
-        <span className='content-text'>{count}</span>
         <button className='primary-btn' onClick={()=>{setCount(count - 1)}}>-</button>
+        <span className='content-text'>{count}</span>
+        <button className='primary-btn' onClick={()=>{setCount(count + 1)}}>+</button>
       </div>
     </div>
     </div>
