@@ -8,9 +8,9 @@ const Usestate = () => {
     <h4 className='sub-title'>UseState</h4>
     <div className='box-container'>
       <div className="row-section">
-        <span>{count}</span>
-        <button onClick={()=>{setCount(count + 1)}}>+</button>
-        <button onClick={()=>{setCount(count - 1)}}>-</button>
+        <button className='primary-btn' onClick={()=>{setCount(count + 1)}}>+</button>
+        <span className='content-text'>{count}</span>
+        <button className='primary-btn' onClick={()=>{setCount(count - 1)}}>-</button>
       </div>
     </div>
     </div>

@@ -67,3 +67,29 @@
   color: var(--primaryColor);
   transition: all 0.6s;
 }
+
+.row-section{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+
+.content-text{
+  height: fit-content;
+  width: fit-content;
+  font-size: 22px;
+  font-family: fantasy;
+  margin: 0px 20px;
+}
+
+.primary-btn{
+  height: 60px;
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
