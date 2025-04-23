@@ -14,7 +14,10 @@ const Home = () => {
         <a className='box'>useMemo</a>
         <a className='box'>useRef</a>
       </div>
+
+      <a href='/pagination'>Pagination</a>
     </div>
+    
   )
 }
 
