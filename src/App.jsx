@@ -1,9 +1,11 @@
-import './App.css'
+import Card from './Components/state/Card'
+import Counter from './Components/state/Counter'
 
 function App() {
 
   return (
-   <h1>Hello</h1>
+  //  <Counter />
+  <Card />
   )
 }
 
