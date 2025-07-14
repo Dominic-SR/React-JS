@@ -15,20 +15,30 @@ const handleDeleteAll = () =>{
     setProducts([])
     setTotalNoOfProduct(0)
 }
+
+const handleReset = () =>{
+    setProducts(data);
+    setTotalNoOfProduct(data.length)
+}
+
   return (
-    <div>
-        <h1>Items in cart:{totalNoOfProduct}</h1>
-        {products.map((product)=>{
-            return(
-                <div key={product.id}>
-                    <p>
+    <div className='container mt-5'>
+        <h2 className='fw-bold'>Items in cart:{totalNoOfProduct}</h2>
+        <div className='my-4'>
+        {products.map((product)=>(
+                <div className='d-flex gap-2 align-items-center' key={product.id}>
+                    <p className='fw-semibold my-3'>
                         {product.name}, Rs{product.Price}
                     </p>
-                    <button onClick={()=>handleDelete(product.id)}>Delete</button>
+                    <button className='btn btn-danger' onClick={()=>handleDelete(product.id)}>Delete</button>
                 </div>
             )
-        })}
-        <button onClick={handleDeleteAll}>Delete All</button>
+        )}
+        </div>
+        <div className='d-flex gap-2'>
+            <button onClick={handleDeleteAll} className='btn btn-danger btn-lg'>Delete All</button>
+            <button onClick={handleReset} className='btn btn-info btn-lg'>Reset</button> 
+        </div>
     </div>
   )
 }
