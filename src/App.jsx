@@ -4,8 +4,8 @@ import Counter from './Components/state/Counter'
 function App() {
 
   return (
-  //  <Counter />
-  <Card />
+   <Counter />
+  // <Card />
   )
 }
 
