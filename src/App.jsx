@@ -4,12 +4,14 @@ import UseEffectExample from './Components/effect/useEffectExample'
 import GithubUsers from './Components/effect/GithubUsers'
 import Timer from "./Components/effect/Timer"
 import ButtonClickCount from "./Components/callback/ButtonClickCounter"
+import Home from './Components/home/Home'
 
 
 function App() {
 
   return (
-    <ButtonClickCount />
+  // <ButtonClickCount />
+  <Home />
   // <Timer />
   // <GithubUsers />
   // <UseEffectExample />
