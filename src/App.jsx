@@ -5,13 +5,17 @@ import GithubUsers from './Components/effect/GithubUsers'
 import Timer from "./Components/effect/Timer"
 import ButtonClickCount from "./Components/callback/ButtonClickCounter"
 import Home from './Components/home/Home'
+import TaskApp from './Components/reducer/TaskApp'
+import SortingMemo from './Components/memo/sortingmemo'
 
 
 function App() {
 
   return (
+  <SortingMemo />
+  //  <TaskApp /> 
   // <ButtonClickCount />
-  <Home />
+  // <Home />
   // <Timer />
   // <GithubUsers />
   // <UseEffectExample />
