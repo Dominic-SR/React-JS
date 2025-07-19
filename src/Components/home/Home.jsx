@@ -29,7 +29,9 @@ const [price, setPrice] = useState('')
             <input type="number" onChange={(e)=>setPrice(e.target.value)} value={price} />
             <button className='btn btn-info mt-4' type='submit'>Add to card</button>
         </form>
-        <Card />
+        <Card 
+          product={newProduct}
+        />
     </div>
   )
 }

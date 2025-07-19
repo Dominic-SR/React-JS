@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { data } from './../../assets/DataSet'
+// import { data } from './../../assets/DataSet'
 
-const Card = () => {
-const [totalNoOfProduct, setTotalNoOfProduct] = useState(data.length)
-const [products, setProducts] = useState(data)
+const Card = ({product}) => {
+const [totalNoOfProduct, setTotalNoOfProduct] = useState(product.length)
+const [products, setProducts] = useState(product)
 
 const handleDelete = (id) =>{
     const updateProduct = products.filter((x)=>x.id != id);
