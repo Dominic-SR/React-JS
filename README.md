@@ -5,4 +5,5 @@
 <li>useRef</li>
 <li>useCallback</li>
 <li>useMemo</li>
+<li>useTransition</li>
 </ul>
