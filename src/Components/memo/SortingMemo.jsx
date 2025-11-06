@@ -22,6 +22,7 @@ const SortingMemo = () => {
         console.log("reducing.....",items);
          items.reduce((accmulator, currentVal)=>{
             const res = accmulator + currentVal;
+            console.log("zzzz",res);
             setItems(res)
         })
         
@@ -30,6 +31,7 @@ const SortingMemo = () => {
   return (
     <div>
         <h1>Sorting Example (with UseMemo)</h1>
+        {console.log("XXX",items)}
         {items.map((item,index)=>(
             <span key={index}>{item}</span>
         ))}

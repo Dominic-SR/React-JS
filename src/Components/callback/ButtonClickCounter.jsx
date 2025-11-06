@@ -3,13 +3,13 @@ const ButtonClickCounter = () =>{
     const [count, setCount] = useState(0);
     const [text, setText] = useState('');
 
-    // const handleClick = () =>{
-    //     setCount((prev)=>prev + 1)
-    // }
+    const handleClick = () =>{
+        setCount((prev)=>prev + 1)
+    }
 
-    const handleClick = useCallback(()=>{
-        setCount((prev)=> prev+ 1);
-    },[])
+    // const handleClick = useCallback(()=>{
+    //     setCount((prev)=> prev+ 1);
+    // },[])
 
     useEffect(()=>{
         console.log("handle click function reffence changed!");

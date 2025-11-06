@@ -14,13 +14,13 @@ function App() {
   return (
   <SortingMemo />
   //  <TaskApp /> 
-  // <ButtonClickCount />
+  // <ButtonClickCount /> //useCallback
   // <Home />
   // <Timer />
   // <GithubUsers />
   // <UseEffectExample />
   // <Card />
-  //  <Counter />
+  //<Counter />
   )
 }
 
