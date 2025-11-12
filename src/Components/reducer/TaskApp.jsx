@@ -14,7 +14,6 @@ const TaskApp = () => {
 const [state, dispatch] = useReducer(taskReducer, oldTask);
   return (
         <TaskContext.Provider value={{state, dispatch}}>
-    {console.log("ssss", state)}
     
             <div className='container m-5'>
                 <h2 className='fw-bold'>Task Management App</h2>
