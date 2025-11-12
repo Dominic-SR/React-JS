@@ -15,8 +15,8 @@ function App() {
   return (
   // <SortingMemo />
   //  <TaskApp />
-  <OnlyUseReduser /> 
-  // <ButtonClickCount /> //useCallback
+  // <OnlyUseReduser /> // useReducer
+  <ButtonClickCount /> //useCallback
   // <Home />
   // <Timer />
   // <GithubUsers />
