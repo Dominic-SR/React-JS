@@ -1,34 +1,58 @@
 import React, { useState } from 'react'
-// import { data } from './../../assets/DataSet'
+import { data } from './../../assets/DataSet'
 
-const Card = ({product}) => {
-const [totalNoOfProduct, setTotalNoOfProduct] = useState(product.length)
-const [products, setProducts] = useState(product)
+const Card = ({}) => {
+const [products, setProducts] = useState(data)
+const [product, setProduct] = useState("")
+const [price, setPrice] = useState(0)
+
+const handleAdd = () => {
+    setProducts((prevProd)=>{
+       return [...prevProd, {id:products.length+1, name:product, Price:price}]}
+    )
+
+}
 
 const handleDelete = (id) =>{
     const updateProduct = products.filter((x)=>x.id != id);
     setProducts(updateProduct);
-    setTotalNoOfProduct(updateProduct.length)
 }
 
 const handleDeleteAll = () =>{
     setProducts([])
-    setTotalNoOfProduct(0)
 }
 
 const handleReset = () =>{
     setProducts(data);
-    setTotalNoOfProduct(data.length)
 }
 
   return (
     <div className='container mt-5'>
-        <h2 className='fw-bold'>Items in cart:{totalNoOfProduct}</h2>
+
+         <h3>Add a Product</h3>
+         <div className='d-flex gap-2 align-items-center'>
+        <input
+            type="text"
+            onChange={(e) => setProduct(e.target.value)}
+            placeholder="Enter a Product Name"
+        />
+
+         <input
+            type="number"
+            onChange={(e) => setPrice(Number(e.target.value))}
+            placeholder="Enter a Price"
+        />
+
+        <button onClick={handleAdd} className='btn btn-success btn-lg'>ADD</button> 
+
+        </div>
+
+        <h2 className='fw-bold'>Items in cart:{products.length}</h2>
         <div className='my-4'>
         {products.map((product)=>(
                 <div className='d-flex gap-2 align-items-center' key={product.id}>
-                    <p className='fw-semibold my-3'>
-                        {product.name}, Rs{product.Price}
+                    <p className='fs-4 fw-semibold my-3'>
+                        {product.name}, <span className='text-success'>Rs {product.Price}</span>
                     </p>
                     <button className='btn btn-danger' onClick={()=>handleDelete(product.id)}>Delete</button>
                 </div>
