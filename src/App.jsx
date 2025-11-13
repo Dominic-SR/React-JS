@@ -13,16 +13,19 @@ import SortingMemo from './Components/memo/sortingmemo'
 function App() {
 
   return (
-  //UseState
-  <Card />
+  //--UseState--//
   // <Counter />
+  // <Card />
+  
+  //--UseEffect--//
+  <Timer />
 
   // <SortingMemo />
   //  <TaskApp />
   // <OnlyUseReduser /> // useReducer
   // <ButtonClickCount /> //useCallback
   // <Home />
-  // <Timer />
+  
   // <GithubUsers />
   // <UseEffectExample />
   
