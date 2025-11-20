@@ -15,10 +15,10 @@ function App() {
   return (
   //--UseState--//
   // <Counter />
-  // <Card />
+   <Card />
   
   //--UseEffect--//
-  <Timer />
+  //  <Timer />
 
   // <SortingMemo />
   //  <TaskApp />
