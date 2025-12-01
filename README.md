@@ -4,9 +4,9 @@
 <ul>
 <li>UseState</li>
 <li>UseEffect</li>
-<!-- <li>useRef</li>
+<li>useRef</li>
 <li>useCallback</li>
 <li>useReducer</li>
 <li>useMemo</li>
-<li>useTransition</li> -->
+<li>useTransition</li>
 </ul>

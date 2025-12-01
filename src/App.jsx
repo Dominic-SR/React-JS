@@ -13,6 +13,7 @@ import SortingMemo from './Components/memo/sortingmemo'
 function App() {
 
   return (
+<<<<<<< HEAD
   //UseState
   // <Card />
   <Counter />
@@ -22,6 +23,14 @@ function App() {
   
   //useCallback
   // <ButtonClickCount /> 
+=======
+  //--UseState--//
+  // <Counter />
+   <Card />
+  
+  //--UseEffect--//
+  //  <Timer />
+>>>>>>> d9160246ba3ac391ab35a65ae8f8f843903016e7
 
   // <SortingMemo />
   //  <TaskApp />
