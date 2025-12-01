@@ -8,8 +8,7 @@ const [price, setPrice] = useState(0)
 
 const handleAdd = () => {
     setProducts((prevProd)=>{
-       return [...prevProd, {id:products.length+1, name:product, Price:price}]
-    }
+       return [...prevProd, {id:products.length+1, name:product, Price:price}]}
     )
 
 }
