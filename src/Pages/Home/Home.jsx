@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+const navigate = useNavigate()
 
   const toNavigate = (nav) =>{
-
+      navigate(nav)
   }
 
   return (
@@ -14,7 +16,7 @@ const Home = () => {
     <ul class="list-group mt-2">
       <li class="list-group-item ps-4">UseState
           <ul class="list-group mt-2">
-            <li class="list-group-item ps-4">Counter</li>
+            <li class="list-group-item ps-4" onClick={()=>toNavigate("counter")}>Counter</li>
             <li class="list-group-item ps-4">Add to Card</li>
           </ul>
       </li>
