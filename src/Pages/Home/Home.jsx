@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Home = () => {
+
+  const toNavigate = (nav) =>{
+
+  }
+
   return (
   <ul class="list-group w-50 m-auto">
   <li class="list-group-item bg-info text-light fw-bold">REACT CONCEPTS</li>
