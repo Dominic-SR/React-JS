@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import {RoutesData} from "../../Data/RoutesData"
 
 const Home = () => {
 const navigate = useNavigate()
@@ -9,23 +10,34 @@ const navigate = useNavigate()
   }
 
   return (
-  <ul class="list-group w-50 m-auto">
-  <li class="list-group-item bg-info text-light fw-bold">REACT CONCEPTS</li>
-  <li class="list-group-item">
-    Hooks
-    <ul class="list-group mt-2">
-      <li class="list-group-item ps-4">UseState
-          <ul class="list-group mt-2">
-            <li class="list-group-item ps-4" onClick={()=>toNavigate("counter")}>Counter</li>
-            <li class="list-group-item ps-4">Add to Card</li>
+  <ul className="list-group w-50 m-auto accordion">
+  <li className="list-group-item bg-info text-light fw-bold">REACT CONCEPTS</li>
+  {RoutesData.map((item,index)=>(
+    
+  <li className="list-group-item accordion-item">
+    
+    <h2 className="accordion-header">
+       <button 
+      className="accordion-button collapsed" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseTwo" >
+      {item.name}
+      </button>
+    </h2>
+    <ul className="accordion list-group mt-2 accordion-flush accordion-collapse collapse" id="collapseTwo">
+      {item.sub.map((itemSub,indexSub)=>(
+      <li className="list-group-item ps-4 ccordion-header accordion-body">UseState
+          <ul className="list-group mt-2">
+            <li className="list-group-item ps-4" onClick={()=>toNavigate("counter")}>Counter</li>
+            <li className="list-group-item ps-4">Add to Card</li>
           </ul>
       </li>
-      <li class="list-group-item ps-4">UseEffect</li>
+      ))}
+      <li className="list-group-item ps-4">UseEffect</li>
     </ul>
-  </li>
-  <li class="list-group-item">Main Item 3</li>
+  </li>))}
 </ul>
-
   )
 }
 
