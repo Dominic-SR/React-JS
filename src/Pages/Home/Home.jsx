@@ -27,14 +27,13 @@ const navigate = useNavigate()
     </h2>
     <ul className="accordion list-group mt-2 accordion-flush accordion-collapse collapse" id="collapseTwo">
       {item.sub.map((itemSub,indexSub)=>(
-      <li className="list-group-item ps-4 ccordion-header accordion-body">UseState
+      <li className="list-group-item ps-4 ccordion-header accordion-body">{itemSub.name}
+          {itemSub?.sub?.map((itemSubMenu,indexSubMenu)=>(
           <ul className="list-group mt-2">
-            <li className="list-group-item ps-4" onClick={()=>toNavigate("counter")}>Counter</li>
-            <li className="list-group-item ps-4">Add to Card</li>
-          </ul>
+            <li className="list-group-item ps-4" onClick={()=>toNavigate("counter")}>{itemSubMenu.name}</li>
+          </ul>))}
       </li>
       ))}
-      <li className="list-group-item ps-4">UseEffect</li>
     </ul>
   </li>))}
 </ul>
