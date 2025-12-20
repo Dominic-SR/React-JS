@@ -5,7 +5,7 @@ import GithubUsers from './Components/effect/GithubUsers'
 import Timer from "./Components/effect/Timer"
 import ButtonClickCount from "./Components/callback/ButtonClickCounter"
 import TaskApp from './Components/reducer/TaskApp'
-import OnlyUseReduser from './Components/reducer/OnlyUseReducer'
+import TaskManagement from './Components/reducer/TaskManagement'
 import SortingMemo from './Components/memo/sortingmemo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
@@ -19,6 +19,10 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/usestate_counter" element={<Counter />} />
     <Route path="/usestate_addtocard" element={<Card/>} />
+
+    <Route path="/usereducer_taskmanagement" element={<TaskManagement />} />
+
+    <Route path="/useeffect_timer" element={<Timer/>} />
   </Routes>
   </BrowserRouter>  
   //UseState

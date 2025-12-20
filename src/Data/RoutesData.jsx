@@ -17,13 +17,24 @@ export const RoutesData = [
                 ]
             },
             {
+                name:"Use Reducer",
+                sub:[
+                    {
+                        name:"Task Management",
+                        to:"usereducer_taskmanagement"
+                    }
+                ]
+            },
+            {
                 name:"Use Effect",
                 sub:[
                     {
-                        name:"API call"
+                        name:"Timer",
+                        to:"useeffect_timer"
                     }
                 ]
-            }
+            },
+            
         ]
     }
 ]
