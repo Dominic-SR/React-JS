@@ -18,6 +18,11 @@ export const RoutesData = [
             },
             {
                 name:"Use Effect",
+                sub:[
+                    {
+                        name:"API call"
+                    }
+                ]
             }
         ]
     }

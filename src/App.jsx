@@ -17,6 +17,8 @@ function App() {
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/usestate_counter" element={<Counter />} />
+    <Route path="/usestate_addtocard" element={<Card/>} />
   </Routes>
   </BrowserRouter>  
   //UseState

@@ -7,11 +7,16 @@ const [product, setProduct] = useState("")
 const [price, setPrice] = useState(0)
 
 const handleAdd = () => {
+    if(product!=="" && price!==0){ 
     setProducts((prevProd)=>{
        return [...prevProd, {id:products.length+1, name:product, Price:price}]
     }
     )
-
+    setPrice(0)
+    setProduct("")
+    }else{
+        alert("Please fill all input field !")
+    }
 }
 
 const handleDelete = (id) =>{
@@ -30,11 +35,12 @@ const handleReset = () =>{
   return (
     <div className='container mt-5'>
 
-         <h3>Add a Product</h3>
+         <h3>Add a Product Using UseState()</h3>
          <div className='d-flex gap-2 align-items-center'>
         <input
             type="text"
             onChange={(e) => setProduct(e.target.value)}
+            value={product}
             placeholder="Enter a Product Name"
         />
 
@@ -42,6 +48,7 @@ const handleReset = () =>{
             type="number"
             onChange={(e) => setPrice(Number(e.target.value))}
             placeholder="Enter a Price"
+            value={price}
         />
 
         <button onClick={handleAdd} className='btn btn-success btn-lg'>ADD</button> 
