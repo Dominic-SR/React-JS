@@ -23,6 +23,8 @@ function App() {
     <Route path="/usereducer_taskmanagement" element={<TaskManagement />} />
 
     <Route path="/useeffect_timer" element={<Timer/>} />
+
+    <Route path="/usecallback_buttonclickmount" element={<ButtonClickCount/>} />
   </Routes>
   </BrowserRouter>  
   //UseState
