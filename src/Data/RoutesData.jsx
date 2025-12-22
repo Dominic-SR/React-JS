@@ -31,6 +31,10 @@ export const RoutesData = [
                     {
                         name:"Timer",
                         to:"useeffect_timer"
+                    },
+                    {
+                        name:"useEffect Counter",
+                        to:"useeffect_counter"
                     }
                 ]
             },
