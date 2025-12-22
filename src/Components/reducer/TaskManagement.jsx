@@ -6,10 +6,10 @@ const reducer = (state, action) => {
     case "ADD":
       return [...state, { id: Date.now(), task: action.payload }];
     case "DELETE":
-      return state.filter((t) => t.id !== action.payload);
+      return state.filter((item) => item.id !== action.payload);
     case "EDIT":
-      return state.map((t) =>
-        t.id === action.payload.id ? { ...t, task: action.payload.newTask } : t
+      return state.map((item) =>
+        item.id === action.payload.id ? { ...item, task: action.payload.newTask } : item
       );
     default:
       return state;
@@ -92,9 +92,9 @@ function TaskApp() {
         <p>No tasks yet!</p>
       ) : (
         <ul style={{ listStyle: "none", padding: 0 }}>
-          {tasks.map((t) => (
+          {tasks.map((item) => (
             <li
-              key={t.id}
+              key={item.id}
               style={{
                 marginBottom: "10px",
                 background: "#f9f9f9",
@@ -105,10 +105,10 @@ function TaskApp() {
                 alignItems: "center",
               }}
             >
-              <span>{t.task}</span>
+              <span>{item.task}</span>
               <div>
                 <button
-                  onClick={() => handleEdit(t)}
+                  onClick={() => handleEdit(item)}
                   style={{
                     marginRight: "8px",
                     background: "#ffc107",
@@ -121,7 +121,7 @@ function TaskApp() {
                   ✏️ Edit
                 </button>
                 <button
-                  onClick={() => handleDelete(t.id)}
+                  onClick={() => handleDelete(item.id)}
                   style={{
                     background: "#dc3545",
                     border: "none",
