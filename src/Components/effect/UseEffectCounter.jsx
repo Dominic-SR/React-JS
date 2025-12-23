@@ -4,14 +4,6 @@ const UseEffectExample = () => {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  useEffect(()=>{
-    console.log("component 1");
-  },[count1])
-
-  useEffect(()=>{
-    console.log("component 2");
-  },[count2])
-  
   const handleIncrement1 = () =>{
     setCount1((prev)=>(prev + 1))
   }
@@ -20,6 +12,14 @@ const UseEffectExample = () => {
     setCount2((prev)=>(prev + 1))
   }
 
+  useEffect(()=>{
+    console.log("component 1");
+  },[count1])
+
+  useEffect(()=>{
+    console.log("component 2");
+  },[count2])
+  
   return (
     <div className='container mt-5'>
         <h2 className='fw-bold'>Counter {count1}</h2>
