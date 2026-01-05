@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from "react"
 const Timer=()=>{
 const [toggle,setToggle] = useState(false)
-console.log("1111");
+console.log("Timer component initialize....");
     return(
         <div className="container mt-5">
             <button className="btn btn-primary btn-lg" onClick={()=>setToggle(!toggle)}>Click Me</button>
@@ -14,10 +14,10 @@ export default Timer
 
 const DemoComponent=()=>{
     useEffect(()=>{
-        console.log("demo compnent");
+        console.log("demo compnent....");
 
         const testOne = setInterval(()=>{
-            console.log("testtt");
+            console.log("Trigger set intervel");
         },1000)
 
         return ()=>{
