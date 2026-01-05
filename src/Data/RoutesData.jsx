@@ -33,9 +33,14 @@ export const RoutesData = [
                         to:"useeffect_timer"
                     },
                     {
-                        name:"useEffect Counter",
+                        name:"UseEffect Counter",
                         to:"useeffect_counter"
+                    },
+                    {
+                        name:"UeEffect Github Users List",
+                        to:"useeffect_githubusers"
                     }
+
                 ]
             },
             {

@@ -24,6 +24,7 @@ function App() {
 
     <Route path="/useeffect_timer" element={<Timer/>} />
     <Route path="/useeffect_counter" element={<UseEffectCounter />} />
+    <Route path="/useeffect_githubusers" element={<GithubUsers/>} />
 
     <Route path="/usecallback_buttonclickmount" element={<ButtonClickCount/>} />
   </Routes>

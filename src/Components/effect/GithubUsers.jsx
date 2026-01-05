@@ -22,7 +22,9 @@ const GithubUsers = () =>{
     },[])
 
     if(loading){
-        return <p>Loading...</p>
+        return <div style={{display:'flex',alignItems:"center",justifyContent:"center",height:"100vh"}}><div class="spinner-border" role="status">
+  <span class="sr-only"></span>
+</div></div>
     }
 
     if(!loading){
