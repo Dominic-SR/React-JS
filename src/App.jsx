@@ -18,11 +18,15 @@ function App() {
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />} />
+
+    {/* UseState */}
     <Route path="/usestate_counter" element={<Counter />} />
     <Route path="/usestate_addtocard" element={<Card/>} />
 
+    {/* UseReducer */}
     <Route path="/usereducer_taskmanagement" element={<TaskManagement />} />
 
+    {/* UseEffect */}
     <Route path="/useeffect_timer" element={<Timer/>} />
     <Route path="/useeffect_counter" element={<UseEffectCounter />} />
     <Route path="/useeffect_githubusers" element={<GithubUsers/>} />
