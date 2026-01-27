@@ -14,7 +14,7 @@ const navigate = useNavigate()
   <li className="list-group-item bg-info text-light fw-bold text-center">REACT</li>
   {RoutesData.map((item,index)=>(
     
-  <li className="list-group-item accordion-item">
+  <li className="list-group-item accordion-item" key={index}>
     
     <h2 className="accordion-header">
        <button 
