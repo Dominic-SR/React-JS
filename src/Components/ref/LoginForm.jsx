@@ -1,8 +1,9 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useRef} from 'react'
 
 const LoginForm = () => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const refContainer = useRef(null);
 
   const handleLogin = (e) =>{
     e.preventDefault();
@@ -16,7 +17,7 @@ const LoginForm = () => {
     <form onSubmit={handleLogin}>
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={(e)=>{setEmail(e.target.value)}} />
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ref={refContainer} />
     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div className="mb-3">
