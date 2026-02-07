@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const LoginForm = () => {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
         <div className="row">
-    <form>
+    <form onSubmit={handleLogin}>
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
