@@ -1,15 +1,35 @@
-import React,{useEffect, useRef} from 'react'
+import React,{useState,useEffect, useRef} from 'react'
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const refContainer = useRef(null);
 
+  useEffect(()=>{
+    console.log(refContainer)
+    console.log(password)
+    
+  })
+
   const handleLogin = (e) =>{
     e.preventDefault();
+    const emailAddress = refContainer.current.value;
+    console.log({email:emailAddress,password:password});
     setEmail("")
     setPassword("")
+    refContainer.current.value='';
   }
+
+  const [count, setCount] = useState(0)
+  const isInitialRender = useRef(true)
+
+  useEffect(()=>{
+     if(isInitialRender.current){
+        isInitialRender.current = false;
+        return;
+     }
+     console.log("useeffect ran because count changed", count);
+  },[count])
 
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
@@ -30,6 +50,11 @@ const LoginForm = () => {
   </div>
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
+
+    <div className="container-fluid">
+      <h1>Count : {count}</h1>
+      <button onClick={()=>setCount(count+1)}>Increament</button>
+    </div>
 </div>
 </div>
   )
