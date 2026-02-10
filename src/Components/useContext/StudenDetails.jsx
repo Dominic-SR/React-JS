@@ -14,7 +14,7 @@ const StudenDetails = () => {
             ))}
           </ul>
 
-           <ContactInformations contactInformation={contactInformation} />
+           <ContactInformations />
       </div>
     </div>
   )
