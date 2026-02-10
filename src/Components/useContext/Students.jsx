@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import { studentDate } from '../../assets/DataSet'
 import StudenDetails from './StudenDetails'
 
+export const StudentContaxt = createContext();
+
 const Students = () => {
   return (
+    <StudentContaxt.Provider value={studentDate}>
     <div className='container d-flex mt-5'>
         <div className='card w-50'>
             <div className='card-body'>
@@ -15,11 +18,9 @@ const Students = () => {
             <p>{studentDate.department}</p>
             </div>
         </div>
-        <StudenDetails 
-            subjects={studentDate.subjects}
-            contactInformation={studentDate.contactInformation}
-        />
+        <StudenDetails />
     </div>
+    </StudentContaxt.Provider>
   )
 }
 

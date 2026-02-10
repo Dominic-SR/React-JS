@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ContactInformations from './ContactInformations'
+import { StudentContaxt } from './Students'
 
-const StudenDetails = ({subjects, contactInformation}) => {
+const StudenDetails = () => {
+  const {subjects} = useContext(StudentContaxt)
   return (
     <div className='card w-50'>
       <div className="card-body">

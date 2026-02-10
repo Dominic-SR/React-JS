@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { StudentContaxt } from './Students';
 
-const ContactInformations = ({contactInformation}) => {
+const ContactInformations = () => {
+    const {contactInformation} = useContext(StudentContaxt)
     const {phone, address} = contactInformation;
   return (
     <div>
