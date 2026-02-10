@@ -55,6 +55,15 @@ export const RoutesData = [
                 ]
             },
             {
+                name:"Use Contaxt",
+                sub:[
+                    {
+                        name:"Students with details",
+                        to:"students_details"
+                    }
+                ]
+            },
+            {
                 name:"Use CallBack",
                 sub:[
                     {

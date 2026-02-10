@@ -10,6 +10,7 @@ import SortingMemo from './Components/memo/sortingmemo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import LoginForm from './Components/ref/LoginForm'
+import Students from './Components/useContext/Students'
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
     <Route path="/useeffect_githubusers" element={<GithubUsers/>} />
 
     <Route path="/useref_loginform" element={<LoginForm />} />
+
+    <Route path="/students_details" element={<Students/>} />
 
     <Route path="/usecallback_buttonclickmount" element={<ButtonClickCount/>} />
   </Routes>
