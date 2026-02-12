@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import { studentDate } from '../../assets/DataSet'
+import { studentDate } from '../../../assets/DataSet'
 import StudenDetails from './StudenDetails'
 
 export const StudentContaxt = createContext();
