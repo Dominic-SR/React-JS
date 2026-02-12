@@ -3,10 +3,10 @@ import Counter from './Components/state/Counter'
 import UseEffectCounter from './Components/effect/UseEffectCounter'
 import GithubUsers from './Components/effect/GithubUsers'
 import Timer from "./Components/effect/Timer"
-import ButtonClickCount from "./Components/callback/ButtonClickCounter"
+import MemroizesFunction from './Components/useCallback/memoizesFunction'
 import TaskApp from './Components/reducer/TaskApp'
 import TaskManagement from './Components/reducer/TaskManagement'
-import SortingMemo from './Components/memo/sortingmemo'
+import SortingMemo from './Components/useMemo/SortingMemo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import LoginForm from './Components/ref/LoginForm'
@@ -36,7 +36,7 @@ function App() {
 
     <Route path="/students_details" element={<Students/>} />
 
-    <Route path="/usecallback_buttonclickmount" element={<ButtonClickCount/>} />
+    <Route path="/usecallback_memroizesfunction" element={<MemroizesFunction/>} />
   </Routes>
   </BrowserRouter>  
   //UseState

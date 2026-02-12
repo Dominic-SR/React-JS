@@ -1,15 +1,15 @@
 import React,{useState, useEffect, useCallback} from "react";
-const ButtonClickCounter = () =>{
+const MemroizesFunction = () =>{
     const [count, setCount] = useState(0);
     const [text, setText] = useState('');
 
-    const handleClick = () =>{
-        setCount((prev)=>prev + 1)
-    }
+    // const handleClick = () =>{
+    //     setCount((prev)=>prev + 1)
+    // }
 
-    // const handleClick = useCallback(()=>{
-    //     setCount((prev)=> prev+ 1);
-    // },[])
+    const handleClick = useCallback(()=>{
+        setCount((prev)=> prev+ 1);
+    },[])
 
     useEffect(()=>{
         console.log("handle click function reffence changed!");
@@ -30,4 +30,4 @@ const ButtonClickCounter = () =>{
     </div>
     )
 }
-export default ButtonClickCounter;
+export default MemroizesFunction;

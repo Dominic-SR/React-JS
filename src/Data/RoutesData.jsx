@@ -67,8 +67,8 @@ export const RoutesData = [
                 name:"Use CallBack",
                 sub:[
                     {
-                        name:"Button Click Mount",
-                        to:"usecallback_buttonclickmount"
+                        name:"Memroizes Function",
+                        to:"usecallback_memroizesfunction"
                     }
                 ]
             },
