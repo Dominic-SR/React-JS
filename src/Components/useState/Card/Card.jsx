@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { data } from './../../assets/DataSet'
+import { data } from './../../../assets/DataSet'
 
 const Card = ({}) => {
 const [products, setProducts] = useState(data)

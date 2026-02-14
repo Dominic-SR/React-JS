@@ -1,5 +1,5 @@
-import Card from './Components/state/Card'
-import Counter from './Components/state/Counter'
+import Card from './Components/useState/Card/Card'
+import Counter from './Components/useState/Counter/Counter'
 import UseEffectCounter from './Components/effect/UseEffectCounter'
 import GithubUsers from './Components/effect/GithubUsers'
 import Timer from "./Components/effect/Timer"
