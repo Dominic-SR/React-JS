@@ -1,11 +1,11 @@
 import Card from './Components/useState/Card/Card'
 import Counter from './Components/useState/Counter/Counter'
-import UseEffectCounter from './Components/effect/UseEffectCounter'
-import GithubUsers from './Components/effect/GithubUsers'
-import Timer from "./Components/effect/Timer"
+import UseEffectCounter from './Components/useEffect/Counter/UseEffectCounter'
+import GithubUsers from './Components/useEffect/GithubUsers/GithubUsers'
+import Timer from "./Components/useEffect/Timer/Timer"
 import MemroizesFunction from './Components/useCallback/memoizesFunction'
-import TaskApp from './Components/reducer/TaskApp'
-import TaskManagement from './Components/reducer/TaskManagement'
+import TaskApp from './Components/useReducer/TaskApp'
+import TaskManagement from './Components/useReducer/TaskManagement'
 import SortingMemo from './Components/useMemo/SortingMemo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
