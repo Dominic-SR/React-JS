@@ -50,7 +50,10 @@ export const RoutesData = [
                         name:"Login Form",
                         to:"useref_loginform"
                     },
-                
+                    {
+                        name:"Auto Focus Input",
+                        to:"useref_autofocusinput"
+                    },
 
                 ]
             },

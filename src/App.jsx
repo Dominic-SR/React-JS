@@ -4,12 +4,13 @@ import UseEffectCounter from './Components/useEffect/Counter/UseEffectCounter'
 import GithubUsers from './Components/useEffect/GithubUsers/GithubUsers'
 import Timer from "./Components/useEffect/Timer/Timer"
 import MemroizesFunction from './Components/useCallback/memoizesFunction'
-import TaskApp from './Components/useReducer/TaskApp'
-import TaskManagement from './Components/useReducer/TaskManagement'
+import TaskApp from './Components/useReducer/TaskManagement/TaskApp'
+import TaskManagement from './Components/useReducer/TaskManagement/TaskManagement'
 import SortingMemo from './Components/useMemo/SortingMemo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import LoginForm from './Components/useRef/LoginForm/LoginForm'
+import AutoFocusInput from './Components/useRef/AutoFocusInput/AutoFocusInput'
 import Students from './Components/useContext/StudentDetails/Students'
 
 
@@ -32,7 +33,10 @@ function App() {
     <Route path="/useeffect_counter" element={<UseEffectCounter />} />
     <Route path="/useeffect_githubusers" element={<GithubUsers/>} />
 
+    {/* UseEffect */}
     <Route path="/useref_loginform" element={<LoginForm />} />
+    <Route path="/useref_autofocusinput" element={<AutoFocusInput />} />
+
 
     <Route path="/students_details" element={<Students/>} />
 
