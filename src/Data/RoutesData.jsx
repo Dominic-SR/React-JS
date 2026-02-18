@@ -72,7 +72,7 @@ export const RoutesData = [
                     {
                         name:"Memroizes Function",
                         to:"usecallback_memroizesfunction"
-                    }
+                    },
                 ]
             },
 
@@ -80,8 +80,12 @@ export const RoutesData = [
                 name:"Use Transition",
                 sub:[
                     {
-                        name:"Button Click Mount",
-                        to:"usecallback_buttonclickmount"
+                        name:"Without Transition",
+                        to:"usetransition_without_transition"
+                    },
+                    {
+                        name:"Without Transition",
+                        to:"usetransition_without_transition"
                     }
                 ]
             },
