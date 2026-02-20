@@ -84,8 +84,8 @@ export const RoutesData = [
                         to:"usetransition_without_transition"
                     },
                     {
-                        name:"Without Transition",
-                        to:"usetransition_without_transition"
+                        name:"Use Transition",
+                        to:"usetransition_use_transition"
                     }
                 ]
             },
