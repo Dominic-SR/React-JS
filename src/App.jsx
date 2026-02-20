@@ -12,6 +12,7 @@ import Home from './Pages/Home/Home'
 import LoginForm from './Components/useRef/LoginForm/LoginForm'
 import AutoFocusInput from './Components/useRef/AutoFocusInput/AutoFocusInput'
 import Students from './Components/useContext/StudentDetails/Students'
+import WithoutTransition from './Components/useTransition/withoutTeansition/WithoutTransition'
 
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
     <Route path="/students_details" element={<Students/>} />
 
     <Route path="/usecallback_memroizesfunction" element={<MemroizesFunction/>} />
+
+    <Route path="/usetransition_without_transition" element={<WithoutTransition />} />
   </Routes>
   </BrowserRouter>  
   //UseState
