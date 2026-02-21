@@ -3,7 +3,7 @@ import Counter from './Components/useState/Counter/Counter'
 import UseEffectCounter from './Components/useEffect/Counter/UseEffectCounter'
 import GithubUsers from './Components/useEffect/GithubUsers/GithubUsers'
 import Timer from "./Components/useEffect/Timer/Timer"
-import MemroizesFunction from './Components/useCallback/memoizesFunction'
+import MemroizesFunction from './Components/useCallback/MemoizesFunction/MemoizesFunction'
 import TaskApp from './Components/useReducer/TaskManagement/TaskApp'
 import TaskManagement from './Components/useReducer/TaskManagement/TaskManagement'
 import SortingMemo from './Components/useMemo/SortingMemo'
