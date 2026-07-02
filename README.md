@@ -1,5 +1,5 @@
 <h3>React JS</h3>
-<h4>Hooks</h4>
+<h4>Hook</h4>
 <ul>
   <li>Use State </li>useRef is a built-in Hook that provides a way to persist values between renders without triggering a re-render when the value changes.
     While useState is for data that the UI needs to "react" to, useRef is for data that needs to be remembered "on the side."
