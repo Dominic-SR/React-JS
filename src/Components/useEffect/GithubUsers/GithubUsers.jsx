@@ -10,7 +10,7 @@ const GithubUsers = () =>{
             setLoading(false)
         }
         catch(err){
-            console.log(err);
+            console.log("error",err);
             setLoading(false)
         }
     }
