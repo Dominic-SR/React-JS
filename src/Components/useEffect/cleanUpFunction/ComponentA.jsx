@@ -1,8 +1,17 @@
 import React from 'react'
 
 const ComponentA = () => {
+  useEffect(()=>{
+    return ()=>{
+      
+    }
+  },[])
+  
   return (
-    <div>ComponentA</div>
+    <div>
+      <P>ComponentA</P>
+      <hr/>
+    </div>
   )
 }
 
