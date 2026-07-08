@@ -33,7 +33,7 @@ const handleReset = () =>{
 }
 
   return (
-    <div className='container mt-5 d-felx align-items-center justify-content-center flex-column gap-3'>
+    <div className='container mt-5 d-flex align-items-center justify-content-center flex-column gap-3'>
 
          <h3>Add a Product Using UseState()</h3>
          <div className='d-flex gap-2 align-items-center'>
