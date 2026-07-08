@@ -11,7 +11,7 @@ export const RoutesData = [
                         to:"usestate_counter"
                     },
                     {
-                        name:"Add to Card",
+                        name:"Add to Cart",
                         to:"usestate_addtocard"
                     }
                 ]

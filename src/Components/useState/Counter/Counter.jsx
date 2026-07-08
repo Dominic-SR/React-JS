@@ -8,7 +8,7 @@ const Increament = () => {
 }
 
   return (
-    <div className='container mt-5'>
+    <div className='container mt-5 d-flex align-items-center justify-content-center flex-column gap-3'>
         <h2 className='fw-bold'>Counter:{count}</h2>
         <div className='d-flex gap-2'>
         <button className='btn btn-primary' onClick={Increament}>Increament</button>
