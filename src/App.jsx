@@ -14,6 +14,7 @@ import AutoFocusInput from './Components/useRef/AutoFocusInput/AutoFocusInput'
 import Students from './Components/useContext/StudentDetails/Students'
 import WithoutTransition from './Components/useTransition/withoutTeansition/WithoutTransition'
 import UseTransition from './Components/useTransition/useTreansition/UseTransition'
+import UndoRedoHistory from './Components/useReducer/UndoRedoHistory/UndoRedoHistory'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
     {/* UseReducer */}
     <Route path="/usereducer_taskmanagement" element={<TaskManagement />} />
+    <Route path="/usereducer_undoredohistory" element={<UndoRedoHistory />} />
 
     {/* UseEffect */}
     <Route path="/useeffect_timer" element={<Timer/>} />

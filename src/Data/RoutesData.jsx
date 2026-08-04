@@ -22,6 +22,10 @@ export const RoutesData = [
                     {
                         name:"Task Management",
                         to:"usereducer_taskmanagement"
+                    },
+                    {
+                        name:"Undo/Redo History",
+                        to:"usereducer_undoredohistory"
                     }
                 ]
             },
