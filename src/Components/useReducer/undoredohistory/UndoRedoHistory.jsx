@@ -14,7 +14,6 @@ const initialState = {
   future: [],     // Stack of future formData states for Redo
 };
 
-// Helper: Form Validator
 function validateStep(step, formData) {
   const errors = {};
   if (step === 1) {
