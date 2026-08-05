@@ -1,6 +1,5 @@
 import React, { useReducer } from 'react';
 
-// 1. Initial State Definition
 const initialState = {
   step: 1, // 1: Personal Info, 2: Preferences, 3: Review & Submit
   formData: {
@@ -25,7 +24,6 @@ function validateStep(step, formData) {
   return errors;
 }
 
-// 2. Reducer Function
 function wizardReducer(state, action) {
   switch (action.type) {
     case 'UPDATE_FIELD': {
@@ -105,7 +103,6 @@ function wizardReducer(state, action) {
   }
 }
 
-// 3. React Component
 export default function RegistrationWizard() {
   const [state, dispatch] = useReducer(wizardReducer, initialState);
   const { step, formData, errors, status, history, future } = state;
