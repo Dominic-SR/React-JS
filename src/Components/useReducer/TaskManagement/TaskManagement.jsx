@@ -50,39 +50,25 @@ function TaskApp() {
 
   return (
     <div
+    className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg"
       style={{
-        padding: "20px",
         maxWidth: "450px",
-        margin: "0 auto",
-        fontFamily: "Arial, sans-serif",
       }}
     >
-      <h2>📝 Task Manager</h2>
+      <h2 className="text-xl font-bold mb-4">📝 Task Manager</h2>
 
-      <div style={{ marginBottom: "10px" }}>
+
+      <div className="d-flex gap-3 mb-4">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter task"
-          style={{
-            padding: "8px",
-            width: "70%",
-            marginRight: "10px",
-            borderRadius: "5px",
-            border: "1px solid #ccc",
-          }}
+          className="form-control w-75 p-2 border rounded"
         />
         <button
           onClick={handleAddOrEdit}
-          style={{
-            padding: "8px 12px",
-            border: "none",
-            borderRadius: "5px",
-            backgroundColor: "#007bff",
-            color: "#fff",
-            cursor: "pointer",
-          }}
+          className="w-25 border-0 rounded p-2 bg-primary text-white"
         >
           {editId ? "Update" : "Add"}
         </button>
@@ -91,45 +77,23 @@ function TaskApp() {
       {tasks.length === 0 ? (
         <p>No tasks yet!</p>
       ) : (
-        <ul style={{ listStyle: "none", padding: 0 }}>
+        <ul className="list-none p-0">
           {tasks.map((item) => (
             <li
               key={item.id}
-              style={{
-                marginBottom: "10px",
-                background: "#f9f9f9",
-                padding: "8px 12px",
-                borderRadius: "8px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
+              className="d-flex justify-content-between align-items-center mb-2 p-2 rounded bg-light"
             >
               <span>{item.task}</span>
               <div>
                 <button
                   onClick={() => handleEdit(item)}
-                  style={{
-                    marginRight: "8px",
-                    background: "#ffc107",
-                    border: "none",
-                    padding: "5px 10px",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                  }}
+                  className="me-2 border-0 p-2 rounded bg-warning text-dark"
                 >
                   ✏️ Edit
                 </button>
                 <button
                   onClick={() => handleDelete(item.id)}
-                  style={{
-                    background: "#dc3545",
-                    border: "none",
-                    padding: "5px 10px",
-                    borderRadius: "5px",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
+                  className="border-0 p-2 rounded bg-danger text-white"
                 >
                   🗑️ Delete
                 </button>

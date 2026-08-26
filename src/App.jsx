@@ -23,7 +23,7 @@ function App() {
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />} />
-
+    {/* HOOKS */}
     {/* UseState */}
     <Route path="/usestate_counter" element={<Counter />} />
     <Route path="/usestate_addtocard" element={<Card/>} />
@@ -37,7 +37,7 @@ function App() {
     <Route path="/useeffect_counter" element={<UseEffectCounter />} />
     <Route path="/useeffect_githubusers" element={<GithubUsers/>} />
 
-    {/* UseEffect */}
+    {/* useRef */}
     <Route path="/useref_loginform" element={<LoginForm />} />
     <Route path="/useref_autofocusinput" element={<AutoFocusInput />} />
 
