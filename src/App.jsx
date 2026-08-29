@@ -29,7 +29,7 @@ function App() {
     <Route path="/usestate_addtocard" element={<Card/>} />
 
     {/* UseReducer */}
-    <Route path="/usereducer_taskmanagement" element={<TaskManagement />} />
+    <Route path="/usereducer_taskmanagement" element={<TaskApp />} />
     <Route path="/usereducer_undoredohistory" element={<UndoRedoHistory />} />
 
     {/* UseEffect */}

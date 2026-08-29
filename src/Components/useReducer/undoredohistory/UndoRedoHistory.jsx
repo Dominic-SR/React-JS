@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 
 const initialState = {
   step: 1, // 1: Personal Info, 2: Preferences, 3: Review & Submit
