@@ -120,6 +120,7 @@ export default function RegistrationWizard() {
   if (status === 'success') {
     return (
       <div className="container py-5" style={{ maxWidth: '600px' }}>
+      
         <div className="card text-center shadow-sm p-4 border-success">
           <div className="card-body">
             <h3 className="text-success mb-3">🎉 Registration Complete!</h3>
