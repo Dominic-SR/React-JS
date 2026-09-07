@@ -67,7 +67,11 @@ export const RoutesData = [
                     {
                         name:"Students with details",
                         to:"students_details"
-                    }
+                    },
+                    {
+                        name:"Add to Cart",
+                        to:"usecontext_add_to_cart"
+                    },
                 ]
             },
             {
