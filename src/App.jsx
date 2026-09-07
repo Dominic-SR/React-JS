@@ -15,6 +15,7 @@ import Students from './Components/useContext/StudentDetails/Students'
 import WithoutTransition from './Components/useTransition/withoutTeansition/WithoutTransition'
 import UseTransition from './Components/useTransition/useTreansition/UseTransition'
 import UndoRedoHistory from './Components/useReducer/UndoRedoHistory/UndoRedoHistory'
+import AddToCartContext from './Components/useContext/AddToCartContext/AddToCartContext'
 
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
     <Route path="/useref_autofocusinput" element={<AutoFocusInput />} />
 
     {/* useContext */}
-    <Route path="/students_details" element={<Students/>} />
+    <Route path="/usecontextstudents_details" element={<Students/>} />
+    <Route path="/usecontext_add_to_cart" element={<AddToCartContext/>} />
 
     {/* useCallback */}
     <Route path="/usecallback_memroizesfunction" element={<MemroizesFunction/>} />
